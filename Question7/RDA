@@ -1,0 +1,200 @@
+
+
+**********expr  ->  expr [arithmetic_op] expr*********************
+RDA:
+
+main arithmetic_op(){
+int a=5,b=7,c=11,d=-13,e=-2;
+String var = op;
+String arthim_op [] ={'*','/','-','+'};
+
+if(op=='*'){
+System.out.println("<arithmetic_op MUL>");
+}if(op=='/'){
+System.out.println("<arithmetic_op DIV>");
+}if(op=='-'){
+System.out.println("<arithmetic_op SUB>");
+}if(op=='+'){
+System.out.println("<arithmetic_op ADD>");
+}
+else{
+System.out.println("<EXPR>");
+}
+
+}
+
+
+***************************************************************
+*********************expr  ->   [ unary_op] expr*********************
+RDA:
+
+main unary_op(){
+int a=5,b=7,c=11,d=-13,e=-2;
+String var = op;
+String un_op [] ={'+','-'};
+
+if(op=='+'){
+System.out.println("<unary_op PLUS> expr");
+}if(op=='-'){
+System.out.println("<unary_op MINUS> expr");
+}else{
+System.out.println("<EXPR>");
+}
+}
+
+
+***********************************************************************
+*********************expr  ->   [logic_op] expr *********************
+RDA:
+
+main logic_op(){
+int a=5,b=7,c=11,d=-13,e=-2;
+String var = op;
+String logic_op [] ={'||','&&'};
+
+if(op=='||'){
+System.out.println("<logic_op OR>");
+}if(op=='&&'){
+System.out.println("<logic_op AND>");
+}else{
+System.out.println("<EXPR>");
+}
+}
+
+
+************************************************************************
+*********************expr  ->   expr [Bitwise_op] expr*********************
+RDA:
+
+
+main bitwise_op(){
+int a=5,b=7,c=11,d=-13,e=-2;
+String var = op;
+String bit_op [] ={'~|','&'};
+
+if(op=='~|'){
+System.out.println("<Bitwise_op XOR>");
+}if(op=='&'){
+System.out.println("<Bitwise_op AND>");
+}else{
+System.out.println("<EXPR>");
+}
+}
+
+
+
+***************************************************************************
+*********************expr  ->   expr [relational_op] expr*********************
+RDA:
+main relational_op(){
+int a=5,b=7,c=11,d=-13,e=-2;
+String var = op;
+String rela_op [] ={'>=','<=','>','<'};
+
+if(op=='>=' || op=='<='){
+System.out.println("<relational_op GLE>");
+}if(op=='>' || op=='<'){
+System.out.println("<relational_op GL>");
+}else{
+System.out.println("<EXPR>");
+}
+}
+
+
+******************************************************************************
+*********************expr  ->   expr [assign] expr ***************************
+RDA:
+
+
+main bitwise_op(){
+int a=5,b=7,c=11,d=-13,e=-2;
+String var = op;
+String assign_op [] ={'=','/='};
+
+if(op=='=' || op=='/=' ){
+System.out.println("<assign>");
+}else{
+System.out.println("<EXPR>");
+}
+}
+}
+
+
+******************************************************************************
+
+*********************expr  ->   expr [mod] expr ******************************
+RDA:
+
+main mod_op(){
+int a=5,b=7,c=11,d=-13,e=-2;
+String var = op;
+String mod_op [] ={'%'};
+
+if(op=='%' ){
+System.out.println("<MOD>");
+}else{
+System.out.println("<EXPR>");
+}
+}
+}
+
+
+
+*******************************************************************************
+*********************var  ->   var [postfix_op]*********************
+RDA:
+//expr -> var 
+
+main postfix_op(){
+int a=5,b=7,c=11,d=-13,e=-2;
+String var = op;
+String post_op [] ={'++<expr>','--<expr>'};
+
+if(op=='++<expr>' || op=='--<expr>' ){
+System.out.println("<POSTFIX_op>");
+}else{
+System.out.println("<EXPR>");
+}
+}
+}
+
+
+
+*******************************************************************************
+*********************var  ->   [prefix_op] var ********************************
+//expr -> var 
+RDA:
+main postfix_op(){
+int a=5,b=7,c=11,d=-13,e=-2;
+String var = op;
+String post_op [] ={'<expr>++','<expr>--'};
+
+if(op=='<expr>++' || op=='<expr>-' ){
+System.out.println("<PREFIX_op>");
+}else{
+System.out.println("<EXPR>");
+}
+}
+}
+
+
+
+
+******************************************************************************
+
+**********expr -> ([NOT_op] expr) ******************
+RDA:
+
+main NOT_op(){
+int a=5,b=7,c=11,d=-13,e=-2;
+while(a==a && b==b)
+if(a!=b){
+System.out.println("<NOT>");
+}else{
+System.out.println("<EXPR>");
+}
+
+}
+
+
+***************************************************************
